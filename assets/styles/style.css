@@ -122,6 +122,41 @@ body {
 
 .banner-header-menu {
   background-color: cyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-;
+      -ms-flex-pack: space-;
+          justify-content: space-;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-menu {
+  list-style-type: none;
+  color: #011E41;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.banner-menu :hover {
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.banner-menu a {
+  text-decoration: none;
 }
 
 .hamburger-button {
@@ -1485,6 +1520,9 @@ input[type="checkbox"] {
 @media only screen and (min-width: 960px) {
   .header-menu {
     padding: 0rem;
+  }
+  .hamburger-button {
+    display: none;
   }
   .inner-header-menu {
     -webkit-box-orient: horizontal;

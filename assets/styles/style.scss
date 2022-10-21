@@ -157,9 +157,37 @@ body {
 ////////////////////////////////////menu banner principal
 .banner-header-menu {
     background-color: cyan;
+    display: flex;
+    justify-content: space-;
+    align-items: center;
 }
 
-//esto es la animacion de las barritas para el menu de hamburguesa
+.banner-menu {
+    list-style-type: none;
+    color: $corporativoAzul;
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 1110px;
+    display: flex;
+    justify-content: space-around;
+
+    & :hover {
+        //esto es algo temporal ya veré qué animacioncitas le pongOwO
+        transition: 0.25s ease-in-out;
+        transform: scale(1.1);
+    }
+}
+
+.banner-menu a {
+    text-decoration: none;
+}
+
+//esto es el boton de hamburguesa
+//abajo está la animacion de las barritas para el menu de hamburguesa
 .hamburger-button {
     background: none;
     border: none;
@@ -1178,6 +1206,10 @@ input[type="checkbox"] {
     .header-menu {
         //height: 95px;
         padding: 0rem;
+    }
+
+    .hamburger-button {
+        display: none;
     }
 
     .inner-header-menu {
