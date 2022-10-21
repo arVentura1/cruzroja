@@ -3,23 +3,21 @@
 $(function(){
 
     // baner header menu
-    /*
-        //esto es para la animacion de las barras del menu hamburguesa
+    
+    //esto es para la animacion de las barras del menu hamburguesa
+    //
+    let hamburgerButton = document.querySelector(".hamburger-button");
+    let barra = document.querySelectorAll(".barra");
+    //
+    $(hamburgerButton).click(function(){
+        barra.forEach(barra => barra.classList.toggle("x"));
         //
-        let hamburgerButton = document.querySelector(".hamburgerButton");
-        let barra = document.querySelectorAll(".barra");
+        //slider menu
         //
-        $(hamburgerButton).click(function(){
-            barra.forEach(barra => barra.classList.toggle("x"));
-            //
-            //slider menu
-            //
-        });
-    */
-
-
-
-
+    });
+    //
+    //
+    //
     let corporativoRojo = '##F5333F';
     let rgbaCol = 'rgba(' + parseInt(corporativoRojo.slice(-6,-4),16)
         + ',' + parseInt(corporativoRojo.slice(-4,-2),16)
