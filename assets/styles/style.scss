@@ -1,0 +1,1492 @@
+// Color Palette
+$blanco: #FFFFFF;
+$corporativoAzul: #011E41;
+$corporativoRojo: #F5333F;
+$corporativoTextos: #323232;
+$corporativoSectionBackground: #EDEDED;
+$corporativoWhiteBackground: #F7F7F7;
+$greenChecksText: #343C44;
+$placeholderColor: #B1B1B1;
+$placeholderColor2: #8E8E8E;
+$privacyPolicy: #959595;
+$doctoraBackground: #F4F4F4;
+$reviewBackground: #FAFAFA;
+$vectorFooter: #BDBDBD;
+
+// Media Queries Screen Sizes
+$sizeMobile: 375px;
+$sizeTablet: 640px;
+$sizeSmallDesktop: 960px;
+$sizeMediumDesktop: 1440px;
+$sizeBiggerDesktop: 1900px;
+
+// Font (Open Sans + Monserrat)
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf"),
+         url("../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf"),
+         //estas no sé si tengo que importarlas
+         url("../fonts/Montserrat/static/Montserrat-Black.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-BlackItalic.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-Bold.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-BoldItalic.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-ExtraBold.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-ExtraLight.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-ExtraLightItalic.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-Italic.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-Light.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-LightItalic.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-Medium.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-MediumItalic.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-Regular.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-SemiBold.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-Thin.ttf"),
+         url("../fonts/Montserrat/static/Montserrat-ThinItalic.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf"),
+         url("../fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf"),
+         //estas no sé si tengo que importarlas
+         url("../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf"),
+         url("../fonts/Open_Sans/static/OpenSans/OpenSans-BoldItalic.ttf"),
+         url("../fonts/Open_Sans/static/OpenSans/OpenSans-ExtraBold.ttf"),
+         url("../fonts/Open_Sans/static/OpenSans/OpenSans-ExtraBoldItalic.ttf"),
+         url("../fonts/Open_Sans/static/OpenSans/OpenSans-Italic.ttf"),
+         url("../fonts/Open_Sans/static/OpenSans/OpenSans-LightItalic.ttf"),
+         url("../fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf"),
+         url("../fonts/Open_Sans/static/OpenSans/OpenSans-MediumItalic.ttf"),
+         url("../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf"),
+         url("../fonts/Open_Sans/static/OpenSans/OpenSans-SemiBold.ttf"),
+         url("../fonts/Open_Sans/static/OpenSans/OpenSans-SemiBoldItalic.ttf");
+    font-weight: normal;
+    font-size: normal;
+}
+
+
+// Mobile First
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    background-color: $blanco;
+}
+
+.header {
+    width: 100%;
+}
+
+.te-informamos {
+    background-color: $corporativoRojo;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-te-informamos {
+    color: $blanco;
+    font-size: 16px;
+    line-height: 20px;
+
+    & .normal-text-0 {
+        font-weight: 500;
+        display: none;
+    }
+    & .normal-text {
+        font-weight: 500;
+    }
+    & .bold-text {
+        font-weight: 700;
+    }
+}
+
+.header-menu {
+    padding: 0px 10px 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.inner-header-menu {
+    max-width: 1900px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-cruz-roja img {
+    width: 100%;
+    height: 60px;
+}
+
+.tu-centro {
+    height: 44px;
+    padding: 0rem 2rem;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.125rem;
+}
+
+.tu-centro-texto {
+    color: $corporativoAzul;
+    font-weight: 600;
+    text-align: right;
+}
+
+.button-secondary {
+    cursor: pointer;
+    width: 121px;
+    height: 40px;
+    color: $corporativoRojo;
+    padding: 10px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border: none;
+    border: 1px solid $corporativoRojo;
+    background: none;
+}
+
+.main {
+    width: 100%;
+    max-width: 1900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rectangle_158 {
+    position: relative;
+}
+
+.rectangle_158 img {
+    width: 100%;
+    height: 316px;
+    object-fit: cover;
+}
+
+.capilar-frame {
+    position: relative;
+    bottom: 90px;
+    background-color: $corporativoAzul;
+}
+
+.inner-capilar-frame {
+    max-width: 100%;
+    padding: 20px;
+    position: relative;
+    bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.titular {
+    background-color: $corporativoRojo;
+    padding: 10px;
+}
+
+.inner-titular {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-titular > .white-text {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 105.9%;
+    text-align: center;
+    color: $blanco;
+}
+
+.inner-titular > .dark-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 105.9%;
+    text-align: center;
+    color: $corporativoAzul;
+}
+
+.insight {
+    background-color: $blanco;
+    padding-left: 12px;
+    padding-right: 7px;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+}
+
+.inner-insight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.insight-element {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.ie-text > span {
+    color: $greenChecksText;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.inner-mas-informacion {
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+.formulario {
+    background-color: $corporativoWhiteBackground;
+}
+
+.form-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-box > span {
+    color: $corporativoAzul;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.form-data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs input {
+    padding: 15px 16px;
+    background-color: $blanco;
+    border-radius: 3px;
+    border: 1px solid $corporativoSectionBackground;
+}
+
+.inputs ::placeholder {
+    color: $placeholderColor;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.checkbox-text {
+    color: $privacyPolicy;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    line-height: 16px;
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    & .normal-text {
+        font-weight: 300;
+    }
+}
+
+.button-primary {
+    cursor: pointer;
+    color: $blanco;
+    padding: 15px 16px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: $corporativoRojo;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tu-injerto-capilar-section {
+    width: 100%;
+    max-width: 1290px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tu-injerto-title {
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.tu-injerto-title-text {
+    color: $corporativoAzul;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 132.4%;
+    text-align: center;
+}
+
+.vector-7v1 {
+    width: 100%;
+    height: 0;
+    border: 2px solid $corporativoRojo;
+}
+
+.articulo {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inner-articulo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.inner-articulo img {
+    width: 120px;
+    height: 120px;
+}
+
+.informacion-art {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.diagnostico {
+    color: $corporativoAzul;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.descripcion-articulo {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.articulo-texto {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.saber-mas {
+    color: $corporativoRojo;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.nuestro-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-nuestro-centro {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nc-text {
+    text-align: center;
+    color: $corporativoAzul;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.nc-vectores {
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.vector-7v2,
+.vector-8 {
+    width: 135px;
+    height: 0px;
+    border: 2px solid $corporativoRojo;
+}
+
+.doctora {
+    padding: 55px 20px;
+    background-color: $doctoraBackground;
+    display: flex;
+    gap: 10px;
+}
+
+.inner-doctora {
+    max-width: 1145px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.inner-doctora img {
+    max-width: 588px;
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.19));
+}
+
+.doctora-articulo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-doctora {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.nombre-doctora {
+    color: $corporativoAzul;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.especialidad-doctora {
+    color: $corporativoRojo;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.doctora-texto {
+    color: $corporativoTextos;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.solicita-presupuesto {
+    padding: 20px;
+    background-color: $corporativoRojo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inner-solicita-presupuesto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sl-texto {
+    color: $blanco;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.button-tertiary {
+    cursor: pointer;
+    width: 133px;
+    height: 44px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: $blanco;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-tertiary span {
+    color: $corporativoAzul;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.faq-titulo {
+    padding: 37px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.faq-titulo-texto {
+    color: $corporativoAzul;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.vector-6 {
+    width: 295px;
+    height: 0px;
+    border: 2px solid $corporativoRojo;
+}
+
+.preguntas-frecuentes-section {
+    max-width: 1145px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.ca-titulo,
+.faq-ca-titulo {
+    text-align: left;
+    color: $corporativoTextos;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.min-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.arti {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.arti-texto {
+    display: none;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0px 0px 35px;
+}
+
+.faq-consiste-articulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 25px;
+    border: 2px solid $corporativoSectionBackground;
+}
+
+.inner-faq-ca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-faq {
+    border: none;
+    background: none;
+}
+
+.ca-flecha {
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    display: block;
+    transition: 0.25s;
+}
+
+.flecha-activa {
+    display: inline-block;
+    background-color: rgba(245, 51, 63, 0);
+    transform: rotate(180deg);
+}
+
+.nuestros-exitos {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ne-titulo {
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.ne-texto {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.vector-6v2 {
+    width: 100%;
+    height: 0px;
+    border: 2px solid $corporativoRojo;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ne-review {
+    padding: 62px 0px;
+    max-width: 1145px;
+    background-color: $reviewBackground;
+}
+
+.inner-ne-review {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-person {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-person {
+    color: $corporativoRojo;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150.68%;
+}
+
+.rating {
+    display: flex;
+}
+
+.rating img {
+    width: 24px;
+    height: 24px;
+}
+
+.review-text {
+    color: $corporativoTextos;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.slider {
+    width: 80px;
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.slid {
+    display: none;
+    width: 32px;
+    height: 32px;
+}
+
+.tllm-container {
+    padding: 26px;
+    color: $blanco;
+    background-color: $corporativoRojo;
+}
+
+.inner-tllm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.tllm-titulo {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.tllm-titulo-1 {
+    font-weight: 700;
+}
+
+.tllm-titulo-2 {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.tllm-form {
+    width: 251px;
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.campos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campos input {
+    background-color: $blanco;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+}
+
+.campos ::placeholder {
+    color: $placeholderColor2;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.check {
+    display: flex;
+    gap: 10px;
+    align-items: self-end;
+}
+
+.checkbox-2 input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.condiciones {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    line-height: 16px;
+    color: $blanco;
+}
+
+.c-normal {
+    font-weight: 300;
+}
+
+.c-bold {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.button-tertiary-llamame {
+    cursor: pointer;
+    width: 133px;
+    height: 44px;
+    padding: 10px;
+    border: none;
+    background-color: $blanco;
+}
+
+.button-tertiary-llamame > span {
+    color: $corporativoAzul;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.collage-injertos {
+    padding: 37px 20px 52px;
+}
+
+.collage-fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.cf-1 img {
+    width: 335px;
+    height: 156px;
+    object-fit: cover;
+}
+
+.extra-collage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.collage-two {
+    display: flex;
+    gap: 10px;
+}
+
+.collage-two img {
+    width: 165px;
+    height: 162px;
+}
+
+.footer {
+    color: $corporativoTextos;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.vector-5 {
+    width: 98%;
+    height: 0px;
+    border: 3px solid $vectorFooter;
+}
+
+.inner-footer-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-cruz-roja-logo img {
+    width: 100%;
+    height: 66px;
+}
+
+.footer-1-telefono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f1-tel {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.f1-num,
+.direccion {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.rrss-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.rrss-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-2 {
+    padding: 40px 20px 33px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aviso-legal {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+.aviso-legal a {
+    color: $corporativoTextos;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+// 640px
+@media only screen and (min-width: $sizeTablet) {
+    .inner-te-informamos {
+        display: flex;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .logo-cruz-roja img {
+        width: 100%;
+        height: 70px;
+    }
+
+    .tu-centro-texto {
+        font-size: 20px;
+    }
+
+    .rectangle_158 img {
+        height: 418px;
+    }
+
+    .insight {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .inner-insight {
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ie-text > span {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .inner-titular {
+        padding: 20px;
+    }
+
+    .inner-titular > .white-text {
+        font-size: 35px;
+    }
+
+    .inner-titular > .dark-text {
+        font-size: 32px;
+    }
+
+    .form-box {
+        padding: 19px 52px;
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .checkbox {
+        gap: 15px;
+    }
+
+    .diagnostico {
+        font-size: 25px;
+    }
+
+    .descripcion-articulo {
+        gap: 10px;
+        font-size: 21px;
+    }
+
+    .inner-doctora,
+    .info-doctora {
+        align-items: center;
+    }
+
+    .nombre-doctora {
+        font-size: 28px;
+    }
+
+    .especialidad-doctora {
+        font-size: 23px;
+    }
+
+    .doctora-texto {
+        font-size: 20px;
+    }
+
+    .sl-texto {
+        font-size: 22px;
+    }
+
+    .inner-faq-ca {
+        padding: 0px 30px;
+    }
+
+    .ne-texto {
+        font-size: 22px;
+    }
+
+    .tllm-form {
+        width: 500px;
+    }
+
+    .tllm-titulo {
+        font-size: 30px;
+    }
+
+    .check {
+        align-items: center;
+    }
+
+    .cf-1 img {
+        width: 570px;
+        height: 212px;
+    }
+
+    .collage-two img {
+        width: 280px;
+        height: 270px;
+    }
+
+    .footer-cruz-roja-logo img {
+        width: 100%;
+        height: 70px;
+    }
+
+    .aviso-legal {
+        gap: 15px;
+    }
+}
+
+// 960px
+@media only screen and (min-width: $sizeSmallDesktop) {
+    .header-menu {
+        height: 95px;
+        padding: 0rem;
+    }
+
+    .inner-header-menu {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .inner-te-informamos {
+        font-size: 22px;
+
+        & .normal-text-0 {
+            display: block;
+        }
+    }
+
+    .logo-cruz-roja img {
+        width: 100%;
+        height: 92px;
+    }
+
+    .tu-centro {
+        padding: 0rem;
+    }
+
+    .rectangle_158 img {
+        height: 518px;
+    }
+
+    .inner-titular {
+        gap: 15px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .tu-injerto-title-text {
+        font-size: 28px;
+    }
+
+    .inner-articulo {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .informacion-art {
+        align-items: unset;
+    }
+
+    .saber-mas {
+        display: none;
+    }
+
+    .nc-text,
+    .ne-texto {
+        font-size: 25px;
+    }
+
+    .tllm-form {
+        width: 750px;
+    }
+
+    .cf-1 img {
+        width: 750px;
+        height: 312px;
+    }
+
+    .collage-two img {
+        width: 370px;
+        height: 370px;
+    }
+
+    .inner-footer-1 {
+        padding: 0px 20px;
+        max-width: 1203px;
+        flex-direction: row;
+    }
+
+    .footer-1-telefono {
+        align-items: unset;
+    }
+
+    .f1-num {
+        width: 102px;
+    }
+
+    .redes-sociales {
+        align-items: unset;
+    }
+}
+
+// 1440px
+@media only screen and (min-width: $sizeMediumDesktop) {
+    .inner-te-informamos {
+        font-size: 18px;
+
+        & .normal-text-0,
+        & .normal-text {
+            font-weight: 500;
+        }
+    }
+
+    .rectangle_158 img {
+        max-width: 1900px;
+        height: 778px;
+        object-position: center -120px;
+    }
+
+    .capilar-frame {
+        height: 0;
+        background-color: inherit;
+    }
+
+    .inner-capilar-frame {
+        max-width: 427px;
+        margin: 0;
+        bottom: 680px;
+        left: 57%;
+    }
+
+    .insight {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .inner-insight {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .ie-text > span {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .inner-titular {
+        padding: 20px;
+        gap: 0px;
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    .inner-titular > .white-text {
+        font-size: 35px;
+    }
+
+    .inner-titular > .dark-text {
+        font-size: 32px;
+    }
+
+    .form-box {
+        padding: 19px 52px;
+    }
+
+    .tu-injerto {
+        max-width: 1212px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tu-injerto-capilar-section {
+        top: 60px; 
+    }
+
+    .tu-injerto-title {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .tu-injerto-title-text {
+        font-size: 40px;
+    }
+
+    .vector-7v1 {
+        width: 470px;
+    }
+
+    .tu-injerto-list {
+        display: flex;
+    }
+
+    .saber-mas {
+        display: block;
+    }
+
+    .nuestro-centro {
+        padding-top: 50px;
+        padding-bottom: 125px;
+    }
+
+    .inner-articulo {
+        flex-direction: column;
+    }
+
+    .informacion-art {
+        align-items: center;
+    }
+
+    .nc-text {
+        font-size: 30px;
+    }
+
+    .diagnostico {
+        font-size: 20px;
+    }
+    
+    .descripcion-articulo {
+        font-size: 18px;
+    }
+
+    .inner-doctora {
+        max-width: 1200px;
+        align-items: unset;
+        flex-direction: row;
+    }
+
+    .info-doctora {
+        align-items: unset;
+    }
+
+    .nombre-doctora {
+        font-size: 25px;
+    }
+
+    .especialidad-doctora {
+        font-size: 20px;
+    }
+    
+    .doctora-texto {
+        font-size: 18px;
+        gap: 40px;
+    }
+
+    .inner-solicita-presupuesto {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .sl-texto {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .faq-titulo-texto {
+        font-size: 25px;
+    }
+
+    .vector-6 {
+        width: 470px;
+    }
+
+    .arti-texto {
+        padding: 25px 78px;
+    }
+
+    .faq-ca-titulo {
+        font-size: 20px;
+    }
+
+    .nuestros-exitos {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        gap: 40px;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .ne-review {
+        max-width: 1200px;
+    }
+
+    .inner-ne-review {
+        padding: 61px 106px;
+        flex-direction: row;
+        align-items: center;
+        gap: 42px;
+    }
+
+    .slid {
+        display: block;
+    }
+
+    .inner-tllm {
+        gap: 80px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .tllm-form {
+        width: auto;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .tllm-titulo {
+        font-size: 25px;
+    }
+
+    .campos {
+        flex-direction: row;
+    }
+    
+    .check {
+        align-items: center;
+    }
+
+    .collage-injertos {
+        padding: 137px 20px 137px;
+    }
+
+    .inner-collage {
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .collage-fotos > .cf-1 img {
+        width: 588px;
+        height: 586px;
+    }
+
+    .collage-fotos {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .collage-two {
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .collage-two img {
+        width: 287px;
+        height: 100%;
+    }
+
+    .extra-collage {
+        gap: 17px;
+    }
+
+    .extra-collage > .cf-1 img {
+        width: 593px;
+        height: 100%;        
+    }
+
+    .vector-5 {
+        width: 99%;
+    }
+}
+
+// 1900px
+@media only screen and (min-width: $sizeBiggerDesktop) {
+    .inner-capilar-frame {
+        left: 58%;
+    }
+
+    .vector-5 {
+        width: 100%;
+    }
+}
