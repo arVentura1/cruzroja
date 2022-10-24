@@ -1,42 +1,59 @@
 "use strict";
 
-$(function(){
+$(function(){   
 
-    // baner header menu
-    
-    //esto es para la animacion de las barras del menu hamburguesa
-    //
-    let hamburgerButton = document.querySelector(".hamburger-button");
-    let barra = document.querySelectorAll(".barra");
-    //
-    $(hamburgerButton).click(function(){
-        barra.forEach(barra => barra.classList.toggle("x"));
-        //
-        //slider menu
-        //
-    });
-    //
-    //
-    //
-    let corporativoRojo = '##F5333F';
-    let rgbaCol = 'rgba(' + parseInt(corporativoRojo.slice(-6,-4),16)
-        + ',' + parseInt(corporativoRojo.slice(-4,-2),16)
-        + ',' + parseInt(corporativoRojo.slice(-2),16)
-        +',0.1)';
+    //progress-bar in webpage scroll
+    $(document).on("scroll", function(){
+        let pixels = $(document).scrollTop();
+        let webHeight = $(document).height() - $(window).height();
+        let progress = 100 * pixels/webHeight;
 
-    // article wrapper
-    $(".arti").click(function() {
-        if (!$(this).children(".ca-flecha").hasClass("flecha-activa")) {
-            $(this).children(".ca-flecha").addClass("flecha-activa");
-            $(this).not(".ca-flecha").css({"background-color":rgbaCol});
-        }
-        else {
-            $(this).children(".ca-flecha").removeClass("flecha-activa");
-            $(this).css({"background-color":"inherit"});
-        }
-
-        $(this).next('.arti-texto').slideToggle("fast");
+        $(".progress-bar").css({"width":progress+"%"});
     });
 
+    //open/close mobile menu
+    $(".menu-bar").click(function(){
+        $(".sidebar").addClass("sidebar-active");
+        $(".back-to-top").addClass("back-to-top-active");
+    });
 
+    $(".close-icon").click(function(){
+        $(".sidebar").removeClass("sidebar-active");
+        $(".back-to-top").removeClass("back-to-top-active");
+    });
+
+    //faq wrapper
+    $(".pregunta").click(function() {
+        $(this).children(".pregunta-titulo").toggleClass("pregunta-titulo-activo");
+        $(this).children(".pregunta-titulo").children(".inner-pt").children(".flechita").toggleClass("flecha-activa");
+        $(this).children(".inner-pt-text").slideToggle("fast");
+    });
+
+    //back to top button
+    $(".back-to-top").click(function(){
+        $("html, body").animate({scrollTop: 0}, 1000);
+    });
+
+    //smooth scroll links
+    $("a[href^='#']").click(function(e){
+        e.preventDefault();
+        let targetLink = this.hash;
+        let targetLink2 = $(targetLink);
+
+        $('html, body').stop().animate({
+            'scrollTop': targetLink2.offset().top
+        }, 800, 'swing', function () {
+            window.location.hash = targetLink;
+        });
+
+        if ($(".sidebar").hasClass("sidebar-active")) {
+            $(".sidebar").removeClass("sidebar-active");
+        }
+
+        if ($(".back-to-top").hasClass("back-to-top-active")) {
+            $(".back-to-top").removeClass("back-to-top-active");
+        }
+    });
 });
+
+// poner esto en chrome -> chrome://flags/#smooth-scrolling
