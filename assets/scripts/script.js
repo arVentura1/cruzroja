@@ -55,5 +55,3 @@ $(function(){
         }
     });
 });
-
-// poner esto en chrome -> chrome://flags/#smooth-scrolling
