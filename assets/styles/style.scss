@@ -24,26 +24,7 @@ $sizeBiggerDesktop: 1900px;
 @font-face {
     font-family: 'Montserrat';
     src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf"),
-         url("../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf"),
-         //estas no sé si tengo que importarlas
-         url("../fonts/Montserrat/static/Montserrat-Black.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-BlackItalic.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-Bold.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-BoldItalic.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-ExtraBold.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-ExtraLight.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-ExtraLightItalic.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-Italic.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-Light.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-LightItalic.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-Medium.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-MediumItalic.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-Regular.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-SemiBold.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-Thin.ttf"),
-         url("../fonts/Montserrat/static/Montserrat-ThinItalic.ttf");
+         url("../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
     font-weight: normal;
     font-style: normal;
 }
@@ -51,19 +32,7 @@ $sizeBiggerDesktop: 1900px;
 @font-face {
     font-family: 'Open Sans';
     src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf"),
-         url("../fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf"),
-         //estas no sé si tengo que importarlas
-         url("../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf"),
-         url("../fonts/Open_Sans/static/OpenSans/OpenSans-BoldItalic.ttf"),
-         url("../fonts/Open_Sans/static/OpenSans/OpenSans-ExtraBold.ttf"),
-         url("../fonts/Open_Sans/static/OpenSans/OpenSans-ExtraBoldItalic.ttf"),
-         url("../fonts/Open_Sans/static/OpenSans/OpenSans-Italic.ttf"),
-         url("../fonts/Open_Sans/static/OpenSans/OpenSans-LightItalic.ttf"),
-         url("../fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf"),
-         url("../fonts/Open_Sans/static/OpenSans/OpenSans-MediumItalic.ttf"),
-         url("../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf"),
-         url("../fonts/Open_Sans/static/OpenSans/OpenSans-SemiBold.ttf"),
-         url("../fonts/Open_Sans/static/OpenSans/OpenSans-SemiBoldItalic.ttf");
+         url("../fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
     font-weight: normal;
     font-size: normal;
 }
