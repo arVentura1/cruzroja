@@ -12,7 +12,7 @@
   font-size: normal;
 }
 
-* {
+html {
   scroll-behavior: smooth;
 }
 

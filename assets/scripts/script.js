@@ -35,7 +35,7 @@ $(function(){
     });
 
     //animation for smooth scroll links
-    $("a[href^='#']").click(function(e){
+    $("a[href^='#']").click(function(){
 
         let targetLink = this.hash;
         let targetLink2 = $(targetLink);
@@ -54,4 +54,5 @@ $(function(){
             $(".back-to-top").removeClass("back-to-top-active");
         }
     });
+    /**/
 });
