@@ -203,7 +203,7 @@ body {
     height: 40px;
     position: absolute;
     cursor: pointer;
-    top: 6px;
+    top: 5px;
     left: 1px;
     margin: 0;
 }
@@ -251,7 +251,8 @@ body {
 
 .te-informamos {
     background-color: $corporativoRojo;
-    height: 45px;
+    //height: 45px;
+    padding: 15px 10px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
