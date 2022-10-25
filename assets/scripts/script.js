@@ -34,6 +34,18 @@ $(function(){
         $("html, body").animate({scrollTop: 0}, 1000);
     });
 
+    //close mobile menu if its clicked outside
+    $(document).mouseup(function(e){
+        let mobileMenu = $(".sidebar");
+
+        if (!mobileMenu.is(e.target) // The target of the click isn't the container.
+            && mobileMenu.has(e.target).length === 0) // Nor a child element of the container
+        {
+           mobileMenu.removeClass("sidebar-active");
+           $(".back-to-top").removeClass("back-to-top-active");
+        }
+     });
+
     //animation for smooth scroll links
     $("a[href^='#']").click(function(){
 
