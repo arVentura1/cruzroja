@@ -34,9 +34,9 @@ $(function(){
         $("html, body").animate({scrollTop: 0}, 1000);
     });
 
-    //smooth scroll links
+    //animation for smooth scroll links
     $("a[href^='#']").click(function(e){
-        //e.preventDefault();
+
         let targetLink = this.hash;
         let targetLink2 = $(targetLink);
 
