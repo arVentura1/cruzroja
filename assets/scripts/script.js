@@ -38,9 +38,7 @@ $(function(){
     $(document).mouseup(function(e){
         let mobileMenu = $(".sidebar");
 
-        if (!mobileMenu.is(e.target) // The target of the click isn't the container.
-            && mobileMenu.has(e.target).length === 0) // Nor a child element of the container
-        {
+        if (!mobileMenu.is(e.target) && mobileMenu.has(e.target).length === 0) {
            mobileMenu.removeClass("sidebar-active");
            $(".back-to-top").removeClass("back-to-top-active");
         }
