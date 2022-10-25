@@ -835,10 +835,10 @@ input[type="checkbox"] {
     gap: 15px;
     cursor: pointer;
     background-color: $blanco;
-    border: 2px solid $corporativoSectionBackground;
 }
 
 .pregunta-titulo {
+    border: 2px solid $corporativoSectionBackground;
     cursor: pointer;
     padding: 10px 25px 10px 25px;
     transition: all 0.3s;
