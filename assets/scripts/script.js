@@ -35,14 +35,14 @@ $(function(){
     });
 
     //animation for smooth scroll links
-    $("a[href='#']").click(function(){
+    $("a[href^='#']").click(function(){
 
         let targetLink = this.hash;
         let targetLink2 = $(targetLink);
 
         $('html, body').stop().animate({
             'scrollTop': targetLink2.offset().top
-        }, 800, 'swing', function () {
+        }, 100, 'swing', function () {
             window.location.hash = targetLink;
         });
 
