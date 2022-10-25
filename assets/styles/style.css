@@ -1858,6 +1858,9 @@ input[type="checkbox"] {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .inner-doctora img {
+    width: auto;
+  }
   .info-doctora {
     -webkit-box-align: unset;
         -ms-flex-align: unset;
