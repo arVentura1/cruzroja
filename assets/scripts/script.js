@@ -23,10 +23,10 @@ $(function(){
     });
 
     //faq wrapper
-    $(".pregunta").click(function() {
-        $(this).children(".pregunta-titulo").toggleClass("pregunta-titulo-activo");
-        $(this).children(".pregunta-titulo").children(".inner-pt").children(".flechita").toggleClass("flecha-activa");
-        $(this).children(".inner-pt-text").slideToggle("fast");
+    $(".pregunta-titulo").click(function() {
+        $(this).toggleClass("pregunta-titulo-activo");
+        $(this).children(".inner-pt").children(".flechita").toggleClass("flecha-activa");
+        $(this).next(".inner-pt-text").slideToggle("fast");
     });
 
     //back to top button
