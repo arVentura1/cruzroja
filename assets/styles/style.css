@@ -795,7 +795,7 @@ input[type="checkbox"] {
 }
 
 .inner-nuestro-centro {
-  padding: 0px 20px;
+  padding: 0px 20px 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -831,6 +831,10 @@ input[type="checkbox"] {
   width: 135px;
   height: 0px;
   border: 2px solid #F5333F;
+}
+
+.flecha-abajo {
+  cursor: pointer;
 }
 
 .doctora {
@@ -912,7 +916,7 @@ input[type="checkbox"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   font-family: 'Open Sans';
   font-weight: 400;
   font-size: 18px;
@@ -1829,7 +1833,7 @@ input[type="checkbox"] {
   .capilar-frame .inner-capilar-frame {
     max-width: 427px;
     margin: 0;
-    bottom: 680px;
+    bottom: 780px;
     left: 57%;
   }
   .insight {
