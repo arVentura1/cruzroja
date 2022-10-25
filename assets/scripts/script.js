@@ -36,7 +36,7 @@ $(function(){
 
     //smooth scroll links
     $("a[href^='#']").click(function(e){
-        e.preventDefault();
+        //e.preventDefault();
         let targetLink = this.hash;
         let targetLink2 = $(targetLink);
 
