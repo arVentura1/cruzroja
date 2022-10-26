@@ -1676,8 +1676,8 @@ input[type="checkbox"] {
     }
     
     .nuestros-exitos {
-        //padding-top: 50px;
-        //padding-bottom: 80px;
+        padding: 0;
+        padding-bottom: 88px;
         gap: 40px;
     }
 
@@ -1686,6 +1686,7 @@ input[type="checkbox"] {
     }
 
     .ne-review {
+        padding: 0;
         max-width: 1200px;
     }
 
@@ -1693,7 +1694,7 @@ input[type="checkbox"] {
         padding: 61px 106px;
         flex-direction: row;
         align-items: center;
-        gap: 42px;
+        gap: 40px;
     }
 
     .slid {
