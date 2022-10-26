@@ -893,6 +893,7 @@ input[type="checkbox"] {
 
 .nuestros-exitos {
     padding-top: 17px;
+    padding-bottom: 11px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -925,17 +926,16 @@ input[type="checkbox"] {
 .review {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .ne-review {
-    padding: 62px 0px;
+    padding: 62px 20px 88px;
     max-width: 1145px;
     background-color: $reviewBackground;
 }
 
 .inner-ne-review {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -980,6 +980,8 @@ input[type="checkbox"] {
 
     & img {
         cursor: pointer;
+        width: 13px;
+        height: 13px;
     }
 }
 
