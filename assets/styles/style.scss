@@ -1205,13 +1205,20 @@ input[type="checkbox"] {
 .aviso-legal {
     display: flex;
     text-align: center;
-    
+
     & a {
         color: $corporativoTextos;
         text-decoration: none;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
+    }
+}
+
+// Extra query
+@media only screen and (min-width: 572px) {
+    .aviso-legal {
+        gap: 15px;
     }
 }
 
@@ -1444,8 +1451,11 @@ input[type="checkbox"] {
     }
 
     .inner-footer-top {
-        padding: 0px 20px;
+        padding: 20px 0px 0px;
         max-width: 1203px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
         flex-direction: row;
     }
 
@@ -1459,7 +1469,11 @@ input[type="checkbox"] {
 
     .redes-sociales {
         align-items: unset;
-    }    
+    }  
+    
+    .direccion {
+        padding: 0;
+    }
 }
 
 // 1440px
@@ -1733,6 +1747,14 @@ input[type="checkbox"] {
     .extra-collage > .cf-1 img {
         width: 593px;
         height: 100%;        
+    }
+
+    .inner-footer-top {
+        gap: 96px;
+    }
+
+    .direccion {
+        padding: 0px;
     }
 }
 

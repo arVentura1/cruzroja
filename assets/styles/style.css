@@ -1587,6 +1587,12 @@ input[type="checkbox"] {
   line-height: 17px;
 }
 
+@media only screen and (min-width: 572px) {
+  .aviso-legal {
+    gap: 15px;
+  }
+}
+
 @media only screen and (min-width: 640px) {
   .inner-te-informamos {
     display: -webkit-box;
@@ -1784,8 +1790,13 @@ input[type="checkbox"] {
     height: 370px;
   }
   .inner-footer-top {
-    padding: 0px 20px;
+    padding: 20px 0px 0px;
     max-width: 1203px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1803,6 +1814,9 @@ input[type="checkbox"] {
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
+  }
+  .direccion {
+    padding: 0;
   }
 }
 
@@ -2068,6 +2082,12 @@ input[type="checkbox"] {
   .extra-collage > .cf-1 img {
     width: 593px;
     height: 100%;
+  }
+  .inner-footer-top {
+    gap: 96px;
+  }
+  .direccion {
+    padding: 0px;
   }
 }
 
