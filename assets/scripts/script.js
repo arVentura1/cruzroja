@@ -66,7 +66,7 @@ $(function(){
     });
     
     $(".elipse").click(function(){
-        
+
         $(".elipse").each(function(){
             if ($(this).attr('src') == './assets/images/EllipseBlack.webp') {
                 $(this).attr('src','./assets/images/EllipseWhite.svg');
