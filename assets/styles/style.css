@@ -1792,7 +1792,7 @@ input[type="checkbox"] {
     height: 370px;
   }
   .inner-footer-top {
-    padding: 20px 0px 0px;
+    padding: 20px 20px 0px;
     max-width: 1203px;
     margin-right: auto;
     margin-left: auto;
