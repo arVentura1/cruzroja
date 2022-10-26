@@ -1260,7 +1260,7 @@ input[type="checkbox"] {
       align-self: center;
 }
 
-.slider img {
+.elipse {
   cursor: pointer;
   width: 13px;
   height: 13px;

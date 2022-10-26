@@ -980,12 +980,16 @@ input[type="checkbox"] {
     flex-direction: row;
     justify-content: space-between;
     align-self: center;
+}
 
-    & img {
-        cursor: pointer;
-        width: 13px;
-        height: 13px;
-    }
+.elipse {
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+}
+
+.elipse-activa {
+    //
 }
 
 .slid {

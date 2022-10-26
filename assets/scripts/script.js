@@ -64,5 +64,15 @@ $(function(){
             $(".back-to-top").removeClass("back-to-top-active");
         }
     });
-    /**/
+    
+    $(".elipse").click(function(){
+        
+        $(".elipse").each(function(){
+            if ($(this).attr('src') == './assets/images/EllipseBlack.webp') {
+                $(this).attr('src','./assets/images/EllipseWhite.svg');
+            }
+        });
+
+        $(this).attr('src','./assets/images/EllipseBlack.webp');
+    });
 });
