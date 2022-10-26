@@ -12,6 +12,7 @@ $privacyPolicy: #959595;
 $doctoraBackground: #F4F4F4;
 $reviewBackground: #FAFAFA;
 $vectorFooter: #BDBDBD;
+$vectorFooter2: #ECECEC;
 
 // Media Queries Screen Sizes
 $sizeMobile: 375px;
@@ -589,18 +590,15 @@ input[type="checkbox"] {
 }
 
 .articulo-main {
-    //padding: 10px;
     padding: 25px 32.5px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    //gap: 10px;
     gap: 0px;
 }
 
 .inner-articulo {
-    //padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1768,6 +1766,10 @@ input[type="checkbox"] {
     .extra-collage > .cf-1 img {
         width: 593px;
         height: 100%;        
+    }
+
+    .footer-top {
+        border-bottom: 1px solid $vectorFooter2;
     }
 
     .inner-footer-top {
