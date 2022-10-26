@@ -1701,6 +1701,10 @@ input[type="checkbox"] {
         display: block;
     }
 
+    .tllm-container {
+        padding: 21px 0px;
+    }
+
     .inner-tllm {
         gap: 80px;
         flex-direction: row;
@@ -1720,6 +1724,7 @@ input[type="checkbox"] {
 
     .campos {
         flex-direction: row;
+        gap: 40px;
     }
     
     .check {

@@ -2022,6 +2022,9 @@ input[type="checkbox"] {
   .slid {
     display: block;
   }
+  .tllm-container {
+    padding: 21px 0px;
+  }
   .inner-tllm {
     gap: 80px;
     -webkit-box-orient: horizontal;
@@ -2050,6 +2053,7 @@ input[type="checkbox"] {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 40px;
   }
   .check {
     -webkit-box-align: center;
