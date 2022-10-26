@@ -803,10 +803,10 @@ input[type="checkbox"] {
 }
 
 .inner-faq {
+    padding-top: 17px;
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding-top: 17px;
 }
 
 .inner-faq-titulo {
@@ -825,9 +825,9 @@ input[type="checkbox"] {
 }
 
 .vector-6 {
+    border: 2px solid $corporativoRojo;
     width: 295px;
     height: 0px;
-    border: 2px solid $corporativoRojo;
 }
 
 .contenedor-faq {
@@ -837,16 +837,16 @@ input[type="checkbox"] {
 }
 
 .pregunta {
+    background-color: $blanco;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: $blanco;
 }
 
 .pregunta-titulo {
+    padding: 12.5px 24px 12.5px 25px;
     border: 2px solid $corporativoSectionBackground;
     cursor: pointer;
-    padding: 12.5px 24px 12.5px 25px;
     transition: all 0.3s;
 }
 
@@ -885,13 +885,13 @@ input[type="checkbox"] {
 }
 
 .inner-pt-text {
+    padding: 0px 0px 35px;
     background-color: $blanco;
     display: none;
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-    padding: 0px 0px 35px;
 }
 
 .nuestros-exitos {
