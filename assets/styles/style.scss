@@ -282,7 +282,7 @@ body {
 }
 
 .inner-header-menu {
-    max-width: 1900px;
+    max-width: 1800px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -408,11 +408,10 @@ body {
 
 .titular {
     background-color: $corporativoRojo;
-    padding: 10px;
+    padding: 20px;
 }
 
 .inner-titular {
-    padding: 10px;
     display: flex;
     flex-direction: column;
 
@@ -1522,8 +1521,12 @@ input[type="checkbox"] {
         line-height: 25px;
     }
 
+    .titular {
+        padding: 0;
+    }
+    
     .inner-titular {
-        padding: 20px;
+        padding: 32.5px 32px;
         gap: 0px;
         flex-direction: column;
         justify-content: unset;
