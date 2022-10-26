@@ -1773,8 +1773,9 @@ input[type="checkbox"] {
         }
     }
 
-    .footer-top {
-        border-bottom: 1px solid $vectorFooter2;
+    .footer-bottom {
+        padding: 15px 29px 27px;
+        border-top: 1px solid $vectorFooter2;
     }
 
     .inner-footer-top {

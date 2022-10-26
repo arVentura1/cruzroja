@@ -2101,8 +2101,9 @@ input[type="checkbox"] {
     width: 593px;
     height: 100%;
   }
-  .footer-top {
-    border-bottom: 1px solid #ECECEC;
+  .footer-bottom {
+    padding: 15px 29px 27px;
+    border-top: 1px solid #ECECEC;
   }
   .inner-footer-top {
     gap: 96px;
