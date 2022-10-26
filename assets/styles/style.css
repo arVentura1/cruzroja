@@ -689,8 +689,12 @@ input[type="checkbox"] {
   border: 2px solid #F5333F;
 }
 
+.tu-injerto-list {
+  gap: 24px;
+}
+
 .articulo-main {
-  padding: 10px;
+  padding: 25px 32.5px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,11 +708,10 @@ input[type="checkbox"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 0px;
 }
 
 .inner-articulo {
-  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1887,6 +1890,8 @@ input[type="checkbox"] {
     top: 60px;
   }
   .tu-injerto-title {
+    padding: 0;
+    padding-top: 40px;
     width: 60%;
     margin-right: auto;
     margin-left: auto;
@@ -1896,6 +1901,7 @@ input[type="checkbox"] {
   }
   .vector-7v1 {
     width: 470px;
+    border: 1px solid #F5333F;
   }
   .tu-injerto-list {
     display: -webkit-box;

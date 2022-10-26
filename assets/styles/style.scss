@@ -584,17 +584,23 @@ input[type="checkbox"] {
     border: 2px solid $corporativoRojo;
 }
 
+.tu-injerto-list {
+    gap: 24px;
+}
+
 .articulo-main {
-    padding: 10px;
+    //padding: 10px;
+    padding: 25px 32.5px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    //gap: 10px;
+    gap: 0px;
 }
 
 .inner-articulo {
-    padding: 20px;
+    //padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1555,6 +1561,8 @@ input[type="checkbox"] {
     }
 
     .tu-injerto-title {
+        padding: 0;
+        padding-top: 40px;
         width: 60%;
         margin-right: auto;
         margin-left: auto;
@@ -1566,6 +1574,7 @@ input[type="checkbox"] {
 
     .vector-7v1 {
         width: 470px;
+        border: 1px solid $corporativoRojo;
     }
 
     .tu-injerto-list {
