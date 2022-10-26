@@ -1761,11 +1761,11 @@ input[type="checkbox"] {
 
     .extra-collage {
         gap: 17px;
-    }
 
-    .extra-collage > .cf-1 img {
-        width: 593px;
-        height: 100%;        
+        & > .cf-1 img {
+            width: 593px;
+            height: 100%;        
+        }
     }
 
     .footer-top {
