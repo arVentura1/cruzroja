@@ -1000,7 +1000,7 @@ input[type="checkbox"] {
 
 .faq {
   padding: 20px;
-  max-width: 1145px;
+  max-width: 1199px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1971,28 +1971,30 @@ input[type="checkbox"] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 30px;
+    gap: 40px;
   }
   .sl-texto {
     font-size: 25px;
     line-height: 30px;
   }
+  .faq {
+    padding: 0;
+  }
   .inner-faq {
-    padding-top: 50px;
+    padding: 93px 100px;
   }
   .inner-faq-titulo > span {
     font-size: 25px;
+  }
+  .flechita {
+    margin-right: 29px;
   }
   .vector-6 {
     width: 470px;
   }
   .pregunta-titulo {
     font-size: 20px;
-  }
-  .pregunta {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 20px 51px;
   }
   .nuestros-exitos {
     padding-top: 50px;
