@@ -840,7 +840,7 @@ input[type="checkbox"] {
 }
 
 .doctora {
-  padding: 97px 20px;
+  padding: 54px 20px;
   background-color: #F4F4F4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1947,6 +1947,9 @@ input[type="checkbox"] {
   }
   .inner-doctora img {
     width: auto;
+  }
+  .doctora {
+    padding: 97px 20px;
   }
   .info-doctora {
     -webkit-box-align: unset;

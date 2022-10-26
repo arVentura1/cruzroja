@@ -685,7 +685,7 @@ input[type="checkbox"] {
 }
 
 .doctora {
-    padding: 97px 20px;
+    padding: 54px 20px;
     background-color: $doctoraBackground;
     display: flex;
     gap: 10px;
@@ -1616,6 +1616,10 @@ input[type="checkbox"] {
         & img {
             width: auto;
         }
+    }
+
+    .doctora {
+        padding: 97px 20px;
     }
 
     .info-doctora {
